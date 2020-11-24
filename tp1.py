@@ -10,13 +10,12 @@ for i in range(i):
         quantity = int(input('indiquer une quantité :'))
 
     priceQ = priceHT * quantity
-    Tva = 0.20
+    Tva = 1.20
     remise = 0.05
-    priceTva = priceQ * Tva + priceQ
+    priceTva = priceQ * Tva
 
     if priceTva >= 200:
         discount = priceTva - (priceTva * remise)
         priceTva = discount
 
     print(priceTva)
-
